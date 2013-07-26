@@ -19,44 +19,77 @@
       background-color: #f5f5f5;
       }
 
+      .nav-container {
+      padding-top: 20px;
+      position: fixed;
+      left: 24%;
+      right: 25%;
+      top: 0;
+      width: 750px;
+      background-color: #f5f5f5;
+      }
+
       .container {
-      padding-top: 40px;
       max-width: 700px;
       }
 
-      hr {
-      margin: 30px 0;
+      h3 {
+      padding-top: 120px;
       }
 
       #response {
       margin-top: 20px;
       display: none;
       }
+
     </style>
     
   </head>
   <body>
-    <div class="container">
+    <div class="nav-container">
       <div>
 	<ul class="nav nav-pills pull-right">
-	  <li><a href="#">Home</a></li>
-	  <li><a href="#">About</a></li>
-	  <li class="active"><a href="#">Contact</a></li>
+	  <li><a href="#section-home">Home</a></li>
+	  <li><a href="#section-about">About</a></li>
+	  <li><a href="#section-contact">Contact</a></li>
 	</ul>
 	<h2>Project Name</h2>
+	<hr>
       </div>
-      <hr>
-      
+    </div>
+    <div class="container">      
       <!-- Home -->
-      <h3>Home</h3>
-      <div style="padding-bottom: 500px">Home Text</div>
+      <h3 id="section-home">Home</h3>
+      <div>
+	<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in velit in nulla dapibus faucibus ut id erat. Vestibulum tincidunt ornare tellus, nec porta lectus consequat in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ullamcorper erat et est luctus, ac tincidunt dolor laoreet. Sed eros nisi, iaculis et urna eu, congue ultrices nunc. Cras commodo molestie lectus eu imperdiet. Integer et sollicitudin ante, vitae tincidunt nunc. Nulla id nibh et ipsum euismod bibendum at in mi. Aenean accumsan metus ut diam interdum lacinia scelerisque ac augue. Mauris ut turpis sit amet enim bibendum rhoncus. </p>
+
+	<p> Integer mattis enim ut felis aliquam, quis dictum arcu congue. Sed libero justo, euismod id neque sit amet, faucibus vulputate ipsum. In ante neque, rutrum ut nulla eu, iaculis accumsan velit. Praesent placerat, nibh non sodales fringilla, justo odio interdum neque, at gravida metus ipsum at metus. Vestibulum sed est lacinia, convallis leo a, iaculis leo. Donec facilisis ultricies ornare. Donec pharetra varius velit et suscipit. Cras egestas magna at nunc pharetra, ut molestie justo convallis. </p>
+
+	<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in velit in nulla dapibus faucibus ut id erat. Vestibulum tincidunt ornare tellus, nec porta lectus consequat in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ullamcorper erat et est luctus, ac tincidunt dolor laoreet. Sed eros nisi, iaculis et urna eu, congue ultrices nunc. Cras commodo molestie lectus eu imperdiet. Integer et sollicitudin ante, vitae tincidunt nunc. Nulla id nibh et ipsum euismod bibendum at in mi. Aenean accumsan metus ut diam interdum lacinia scelerisque ac augue. Mauris ut turpis sit amet enim bibendum rhoncus. </p>
+
+	<p>Integer mattis enim ut felis aliquam, quis dictum arcu congue. Sed libero justo, euismod id neque sit amet, faucibus vulputate ipsum. In ante neque, rutrum ut nulla eu, iaculis accumsan velit. Praesent placerat, nibh non sodales fringilla, justo odio interdum neque, at gravida metus ipsum at metus. Vestibulum sed est lacinia, convallis leo a, iaculis leo. Donec facilisis ultricies ornare. Donec pharetra varius velit et suscipit. Cras egestas magna at nunc pharetra, ut molestie justo convallis. </p>
+      </div>
+
+      <!-- trick -->
+      <h3></h3>
 
       <!-- About -->
-      <h3>About</h3>
-      <div style="padding-bottom: 500px">About Text</div>
+      <h3 id="section-about">About</h3>
+      <div>
+	<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in velit in nulla dapibus faucibus ut id erat. Vestibulum tincidunt ornare tellus, nec porta lectus consequat in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ullamcorper erat et est luctus, ac tincidunt dolor laoreet. Sed eros nisi, iaculis et urna eu, congue ultrices nunc. Cras commodo molestie lectus eu imperdiet. Integer et sollicitudin ante, vitae tincidunt nunc. Nulla id nibh et ipsum euismod bibendum at in mi. Aenean accumsan metus ut diam interdum lacinia scelerisque ac augue. Mauris ut turpis sit amet enim bibendum rhoncus.</p>
+
+	<p>Integer mattis enim ut felis aliquam, quis dictum arcu congue. Sed libero justo, euismod id neque sit amet, faucibus vulputate ipsum. In ante neque, rutrum ut nulla eu, iaculis accumsan velit. Praesent placerat, nibh non sodales fringilla, justo odio interdum neque, at gravida metus ipsum at metus. Vestibulum sed est lacinia, convallis leo a, iaculis leo. Donec facilisis ultricies ornare. Donec pharetra varius velit et suscipit. Cras egestas magna at nunc pharetra, ut molestie justo convallis. </p>
+
+	<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in velit in nulla dapibus faucibus ut id erat. Vestibulum tincidunt ornare tellus, nec porta lectus consequat in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ullamcorper erat et est luctus, ac tincidunt dolor laoreet. Sed eros nisi, iaculis et urna eu, congue ultrices nunc. Cras commodo molestie lectus eu imperdiet. Integer et sollicitudin ante, vitae tincidunt nunc. Nulla id nibh et ipsum euismod bibendum at in mi. Aenean accumsan metus ut diam interdum lacinia scelerisque ac augue. Mauris ut turpis sit amet enim bibendum rhoncus. </p>
+
+	<p> Integer mattis enim ut felis aliquam, quis dictum arcu congue. Sed libero justo, euismod id neque sit amet, faucibus vulputate ipsum. In ante neque, rutrum ut nulla eu, iaculis accumsan velit. Praesent placerat, nibh non sodales fringilla, justo odio interdum neque, at gravida metus ipsum at metus. Vestibulum sed est lacinia, convallis leo a, iaculis leo. Donec facilisis ultricies ornare. Donec pharetra varius velit et suscipit. Cras egestas magna at nunc pharetra, ut molestie justo convallis. </p>	
+      </div>
+
+      <!-- trick -->
+      <h3></h3>
 
       <!-- Contact -->
-      <h3>Contact</h3>
+      <h3 id="section-contact">Contact</h3>
       <form id="contact">
 	<div class="controls controls-row">
 	  <input type="text" name="fname" class="span3" required="true" placeholder="First Name">
@@ -75,6 +108,10 @@
 	<div id="response" class="alert alert-success"></div>
       </form>
 
+      <!-- trick -->
+      <h3></h3>
+      <h3></h3>
+
       <hr>
 
       <div class="footer">
@@ -84,6 +121,8 @@
 
     <!-- Adding jquery.js -->
     <script src="http://code.jquery.com/jquery-2.0.3.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/jquery.scrollto.js"></script>
     <script>
       
       var request;
@@ -123,6 +162,12 @@
 
       event.preventDefault();
 
+      });
+
+      $(".nav").onePageNav({
+      currentClass: "active",
+      changeHash: true,
+      scrollSpeed: 750
       });
 
     </script>
