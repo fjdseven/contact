@@ -3,11 +3,44 @@
   <head>
     <meta charset="utf-8">
     <title>Contact us</title>
-    <meta name="veiwport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
+
+    <!-- Adding bootstrap.css -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Adding bootstrap-responsive.css -->
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Customization -->
+    <style>
+    </style>
+    
   </head>
   <body>
-    <div></div>
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form method="get">
+	<div class="controls controls-row">
+	  <input type="text" id="fname" class="span3"  placeholder="First Name">
+	  <input type="text" id="lname" class="span3"  placeholder="Last Name">
+	</div>
+	<div class="controls">
+	  <input type="text" id="email" class="span6"  placeholder="Email Address">
+	</div>
+	<div class="controls">
+          <textarea rows="7" id="message" class="span6"  placeholder="Message"></textarea>
+	</div>
+	<div class="controls controls-row">
+	  <button class="btn" type="reset">Reset</button>
+	  <button class="btn btn-primary" type="submit">Submit</button>
+	</div>
+      </form>
+    </div>
+
+    <!-- Adding jquery.js -->
+    <script src="http://code.jquery.com/jquery-2.0.3.js"></script>
+    
   </body>
 </html>
