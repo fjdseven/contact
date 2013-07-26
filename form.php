@@ -1,9 +1,9 @@
 <?php
 
 // DO SOMETHING
-sleep(5);
+sleep(2);
 
 // echo successful response
-echo 'Thank you! You message has been sent successfully.';
+echo 'Thank you! Your message has been sent successfully.';
 
 ?>
