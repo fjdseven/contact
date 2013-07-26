@@ -1,4 +1,9 @@
-<%php>
+<?php
 
+// DO SOMETHING
+sleep(5);
 
-</%php>
+// echo successful response
+echo 'Thank you! You message has been sent successfully.';
+
+?>

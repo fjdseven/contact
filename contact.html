@@ -21,7 +21,7 @@
   <body>
     <div class="container">
       <h2>Contact Us</h2>
-      <form method="get">
+      <form id="contact">
 	<div class="controls controls-row">
 	  <input type="text" name="fname" class="span3"  placeholder="First Name">
 	  <input type="text" name="lname" class="span3"  placeholder="Last Name">
@@ -37,10 +37,50 @@
 	  <button class="btn btn-primary" type="submit">Submit</button>
 	</div>
       </form>
+      <div id="response" class="span6"></div>
     </div>
 
     <!-- Adding jquery.js -->
     <script src="http://code.jquery.com/jquery-2.0.3.js"></script>
+    <script>
+      
+      var request;
+      
+      $("#contact").submit(function(event) {
+      if (request) {
+      request.abort();
+      }
+
+      var $form = $(this);
+
+      var $inputs = $form.find("input, textarea, button");
+
+      var serializedData = $form.serialize();
+
+      $inputs.prop("disabled", true);
+
+      request = $.ajax ({
+      url: "form.php",
+      type: "GET",
+      data: serializedData
+      });
+
+      request.done(function (response, textStatus, jqXHR) {
+      $("#response").html(response);
+      });
+
+      request.always(function() {
+      $inputs.prop("disabled", false);
+      $("#contact").each(function() {
+      this.reset();
+      });
+      });
+
+      event.preventDefault();
+
+      });
+
+    </script>
     
   </body>
 </html>
